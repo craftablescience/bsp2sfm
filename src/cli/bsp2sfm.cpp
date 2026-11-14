@@ -54,6 +54,7 @@ int main(int argc, const char* const argv[]) {
 			.add_argument("path")
 			.metavar("PATH")
 			.help("The path to the input map.")
+			.default_value(inputPath).store_into(inputPath)
 			.required();
 
 		//endregion
@@ -121,6 +122,7 @@ int main(int argc, const char* const argv[]) {
 				if (const auto vtfData = pak->readEntry(cubemapPath)) {
 					vtfpp::VTF vtf{*vtfData};
 					vtf.setVersion(5);
+					pak->removeEntry(cubemapPath);
 					pak->addEntry(cubemapPath, vtf.bake());
 				}
 			}
