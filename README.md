@@ -1,6 +1,6 @@
 <div>
   <!--suppress HtmlDeprecatedAttribute -->
-  <img align="left" width="40px" src="https://github.com/craftablescience/bsp2sfm/blob/main/res/logo.png?raw=true" alt="bsp2sfm Logo" />
+  <img align="left" width="40px" src="https://github.com/craftablescience/bsp2sfm/blob/main/res/brand/logo.png?raw=true" alt="bsp2sfm Logo" />
   <h1>bsp2sfm</h1>
 </div>
 
